@@ -17,3 +17,52 @@
     --google-color: #f4b400;
     --youtube-color: #ff0000;
 }
+
+body {
+    min-height: 100vh;
+    background-color: var(--blue-color);
+    background-image: linear-gradient(
+        45deg,
+        var(--blue-color),
+        var(--pink-color),
+        var(--yellow-color)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    
+}
+
+.menu .action_btn {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: scale 0.2s ease;
+}
+
+.menu .action_btn:hover {
+    scale: 1.05;
+}
+
+.menu .action_btn:active {
+    scale: 0.95;
+}
