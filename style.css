@@ -80,6 +80,10 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
+    transition: 0.5s;
+    /* Reverse delay on close */
+    transition-delay: calc(0.2s * (6 - var(--i)));
 }
 
 .menu.open li {
@@ -87,11 +91,13 @@ body {
         calc(-50% + 1px * var(--x)),
         calc(-50% + 1px * var(--y))
     );
+    /* Open Delay */
+    transition-delay: calc(0.15s * var(--i));
 }
 
 .menu li a {
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     background-color: #fff;
     border-radius: 50%;
     display: flex;
@@ -100,6 +106,14 @@ body {
     font-size: 1.5rem;
     color: var(--color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: width .3s ease-in-out, height .3s ease-in-out;
+}
+
+.menu.open li a {
+    width: 60px;
+    height: 60px;
+    /* Open Delay - width, height */
+    transition-delay: calc(0.25s * var(--i));
 }
 
 .menu li:hover a {
