@@ -15,32 +15,32 @@
         </button>
 
         <ul>
-            <li style="--i: 1; --color: var(--fb-color)">
+            <li style="--i: 1; --x: -50; --y: -100; --color: var(--fb-color)">
                 <a href="#">
                     <ion-icon name="logo-facebook"></ion-icon>
                 </a>
             </li>
-            <li style="--i: 1; --color: var(--insta-color)">
+            <li style="--i: 1; --x: 50; --y: -100; --color: var(--insta-color)">
                 <a href="#">
                     <ion-icon name="logo-instagram"></ion-icon>
                 </a>
             </li>
-            <li style="--i: 1; --color: var(--twitter-color)">
+            <li style="--i: 1; --x: 100; --y: 0; --color: var(--twitter-color)">
                 <a href="#">
                     <ion-icon name="logo-twitter"></ion-icon>
                 </a>
             </li>
-            <li style="--i: 1; --color: var(--linkedin-color)">
+            <li style="--i: 1; --x: 50; --y: 100; --color: var(--linkedin-color)">
                 <a href="#">
                     <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
             </li>
-            <li style="--i: 1; --color: var(--google-color)">
+            <li style="--i: 1; --x: -50; --y: 100; --color: var(--google-color)">
                 <a href="#">
                     <ion-icon name="logo-google"></ion-icon>
                 </a>
             </li>
-            <li style="--i: 1; --color: var(--youtube-color)">
+            <li style="--i: 1; --x: -100; --y: 0; --color: var(--youtube-color)">
                 <a href="#">
                     <ion-icon name="logo-youtube"></ion-icon>
                 </a>
@@ -54,7 +54,7 @@
         const menu = document.querySelector('.menu')
 
         button.onclick = function() {
-            menu.classlist.toggle ('open')
+            menu.classList.toggle('open')
         }
 
     </script>

@@ -82,6 +82,13 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.menu.open li {
+    transform: translate(
+        calc(-50% + 1px * var(--x)),
+        calc(-50% + 1px * var(--y))
+    );
+}
+
 .menu li a {
     width: 60px;
     height: 60px;
